@@ -6,7 +6,7 @@ A seguir os artefatos que serão gerados ao longo do desenvolvimento deste proje
 Nesta etapa são levantadas o Documento de Escopo, as e as Sprints Backlog.
 
 \subsection{Documento de escopo}
-Este é o ponto de início para desenvolvimento do projeto, nele deve ser descrito em alto nível, que tipo de problema este projeto resolve. A figura \ref{doc-escopo} mostra este documento.
+Este é o ponto de início para desenvolvimento do projeto, nele deve ser descrito em alto nível, que tipo de problema este projeto resolve. A Figura \ref{doc-escopo} mostra este documento.
 
 \begin{figure}[H]
 \caption{\label{doc-escopo} Documento de escopo}
@@ -35,8 +35,6 @@ Este artefato faz a coleta, em um nível abstrato e sem riqueza de detalhes, das
     US004 & Como usuário do sistema eu gostaria de acessar meu perfil e verificar as ações que realizei em um período especifico de tempo. \\
 
     US005 & Como administrador do sistema eu gostaria de cadastrar outros usuários para a utilização do sistema. \\
-
-    US006 & Como usuário do sistema eu gostaria de receber notificações no meu Smartphone sobre ações que estão ocorrendo em minha casa, mesmo estando fora dela. \\
    
    \bottomrule
    \end{tabularx}
@@ -61,8 +59,6 @@ A tabela \ref{product} mostra a listagem de User Stories, ordenada por prioridad
     US003 & Status de dispositivos. \\
     US004 & Histórico de ações de usuários. \\
     US005 & CRUD de usuários. \\
-    US006 & Notificações via Smartphone. \\
-
    \bottomrule
    \end{tabular}
 }{
@@ -73,7 +69,7 @@ A tabela \ref{product} mostra a listagem de User Stories, ordenada por prioridad
 \subsection{Sprints}
 Aqui são listadas as sprints realizadas neste projeto, juntamente com suas revisões. Revisões estas que descrevem fatos ocorridos durante o desenvolvimento do projeto.
 
-\paragraph{Sprint 1} A Sprint 1 iniciou com o desenvolvimento da US001, esta foi subdividida em tarefas mais detalhadas conforme a figura \ref{sprint-1}.
+\paragraph{Sprint 1} A Sprint 1 iniciou com o desenvolvimento da US001, esta foi subdividida em tarefas mais detalhadas conforme a Figura \ref{sprint-1}.
 
 \begin{figure}[H]
 \caption{\label{sprint-1} Detalhamento sprint 1}
@@ -81,7 +77,7 @@ Aqui são listadas as sprints realizadas neste projeto, juntamente com suas revi
 \legend{Fonte: Autor do projeto}
 \end{figure}
 
-\paragraph{Retrospectiva da Sprint 1} Realizado a montagem de placas auxiliares para fixação no protoboard , posteriormente esse circuito é utilizado para demonstrar o funcionamento dos módulos que coletam as informações e fazem os acionamentos. A figura \ref{ysto-preeview} mostra a etapa final de montagem.
+\paragraph{Retrospectiva da Sprint 1} Realizado a montagem de placas auxiliares para fixação no protoboard , posteriormente esse circuito é utilizado para demonstrar o funcionamento dos módulos que coletam as informações e fazem os acionamentos. A Figura \ref{ysto-preeview} mostra a etapa final de montagem.
 
 \begin{figure}[H]
 \caption{\label{ysto-preeview} Montagem das placas de fixação dos módulos}
@@ -89,7 +85,7 @@ Aqui são listadas as sprints realizadas neste projeto, juntamente com suas revi
 \legend{Fonte: Autor do projeto}
 \end{figure}
 
-Na realização desta etapa, o modelo escolhido apresentou problemas no uso do interpretador de comando JavaScript, o Espruino(Espruino, 2017). Existe um Bug que não permite a gravação de informações na região não volátil de memória do módulo, isso inviabiliza temporariamente a utilização desta versão do módulo ESP8266. A figura \ref{ma-preeview} mostra como é o referido módulo.
+Na realização desta etapa, o modelo escolhido apresentou problemas no uso do interpretador de comando JavaScript, o Espruino(Espruino, 2017). Existe um Bug que não permite a gravação de informações na região não volátil de memória do módulo, isso inviabiliza temporariamente a utilização desta versão do módulo ESP8266. A Figura \ref{ma-preeview} mostra como é o referido módulo.
 
 \begin{figure}[H]
 \caption{\label{ma-preeview} Módulo ESP8266 tipo 01}
@@ -97,7 +93,7 @@ Na realização desta etapa, o modelo escolhido apresentou problemas no uso do i
 \legend{Fonte: Website da Espressif}
 \end{figure}
 
-Este Bug foi relatado aos autores do projeto e após a correção é possível retomar o uso desta versão de hardware. Para dar continuidade ao projeto será utilizado uma variação de placa da família ESP8266, a tipo 12 ou também conhecida como Node MCU. A figura \ref{ma-novo-preeview} mostra como é esta placa.
+Este Bug foi relatado aos autores do projeto e após a correção é possível retomar o uso desta versão de hardware. Para dar continuidade ao projeto será utilizado uma variação de placa da família ESP8266, a tipo 12 ou também conhecida como Node MCU. A Figura \ref{ma-novo-preeview} mostra como é esta placa.
 
 \begin{figure}[H]
 \caption{\label{ma-novo-preeview} Módulo ESP8266 tipo 12}
@@ -108,7 +104,7 @@ Este Bug foi relatado aos autores do projeto e após a correção é possível r
 Este modelo não apresentou os problemas descritos anteriormente, nele temos mais capacidade de armazenamento e um número maior de General Purpose Input/Output.
 
 
-\paragraph{Sprint 2} A Sprint 2 deu seguimento as atividades da US001, novas tarefas foram identificadas dentro deste contexto e adicionadas, conforme mostra a figura \ref{sprint-2}.
+\paragraph{Sprint 2} A Sprint 2 deu seguimento as atividades da US001, novas tarefas foram identificadas dentro deste contexto e adicionadas, conforme mostra a Figura \ref{sprint-2}.
 
 \begin{figure}[H]
 \caption{\label{sprint-2} Detalhamento sprint 2}
@@ -118,7 +114,7 @@ Este modelo não apresentou os problemas descritos anteriormente, nele temos mai
 
 \paragraph{Retrospectiva da Sprint 2} Realizado um teste com uma biblioteca disponibilizada para o framework Arduíno (Arduino, 2017), a ESPHelper (ESPHelper, 2017), com ela foi possível a utilização da placa ESP-01, mantendo as dimensões reduzidas do nosso módulo de acesso e captura de informações do mundo físico. Para a realização dos testes de comunicação com o servidor, já utilizando o lugar final onde este ficará armazenado, foi utilizado o cliente para o protocolo MQTT chamado Mosquitto (Mosquitto, 2017).
 
-\paragraph{Sprint 3} Esta Sprint deve ser o encerramento do Firmware conforme a figura \ref{sprint-3} contempla as seguintes atividades.
+\paragraph{Sprint 3} Esta Sprint deve ser o encerramento do Firmware conforme a Figura \ref{sprint-3} contempla as seguintes atividades.
 
 \begin{figure}[H]
 \caption{\label{sprint-3} Detalhamento sprint 3}
@@ -128,7 +124,7 @@ Este modelo não apresentou os problemas descritos anteriormente, nele temos mai
 
 \paragraph{Retrospectiva da Sprint 3} Realizado a implementação de acionamento do módulo auxiliar.
 
-\paragraph{Sprint 4} A figura \ref{sprint-4} mostra o planejamento da sprint 4.
+\paragraph{Sprint 4} A Figura \ref{sprint-4} mostra o planejamento da sprint 4.
 
 \begin{figure}[H]
 \caption{\label{sprint-4} Detalhamento sprint 4}
@@ -139,7 +135,7 @@ Este modelo não apresentou os problemas descritos anteriormente, nele temos mai
 
 \paragraph{Retrospectiva da Sprint 4} Nesta Sprint foi fixado uma estrutura de tópicos para controlar os Módulos Auxiliares (MA), também foi feita a ligação do serviço Mosquitto instalado na RaspberryPI com um serviço que roda na nuvem chamado CloudMQTT\footnote{https://www.cloudmqtt.com/}, isso permite controlar os módulo auxiliares em qualquer lugar onde existe acesso a internet.
 
-\paragraph{Sprint 5} A figura \ref{sprint-5} mostra o planejamento da sprint 5.
+\paragraph{Sprint 5} A Figura \ref{sprint-5} mostra o planejamento da sprint 5.
 
 \begin{figure}[H]
 \caption{\label{sprint-5} Detalhamento sprint 5}
@@ -147,7 +143,7 @@ Este modelo não apresentou os problemas descritos anteriormente, nele temos mai
 \legend{Fonte: Autor do projeto}
 \end{figure}
 
-\paragraph{Retrospectiva da Sprint 5} Nesta sprint ocorreu a implementação das US002, US003 e US005, em conjunto a esse desenvolvimento, testes unitários foram executados, a figura \ref{testes} mostra o relatório de testes realizados até o momento.
+\paragraph{Retrospectiva da Sprint 5} Nesta sprint ocorreu a implementação das US002, US003 e US005, em conjunto a esse desenvolvimento, testes unitários foram executados, a Figura \ref{testes} mostra o relatório de testes realizados até o momento.
 
 \begin{figure}[H]
 \caption{\label{testes} Testes unitários da API}
@@ -155,7 +151,7 @@ Este modelo não apresentou os problemas descritos anteriormente, nele temos mai
 \legend{Fonte: Autor do projeto}
 \end{figure}
 
-\paragraph{Sprint 6} A figura \ref{sprint-6} mostra o planejamento da sprint 6.
+\paragraph{Sprint 6} A Figura \ref{sprint-6} mostra o planejamento da sprint 6.
 
 \begin{figure}[H]
 \caption{\label{sprint-6} Detalhamento sprint 6}
@@ -176,7 +172,7 @@ Na sprint 7 estava previsto a implementação da Interface com o usuário (UI), 
     \item[d]) Quantidade de espaço ocupado no cartão SD pela API, em bytes: 64MB de arquivos
 \end{itemize}
 
-Essa parece ser uma característica do NodeJS, que tem como lema "Baterias não inclusas". Essa politica tem seus prós e contras, depois de muito pesquisar pareceu ser a melhor alternativa trocar a tecnologia de desenvolvimento da API. Python foi escolhido, justamente por fazer uma proposta do tipo "Baterias inclusas", o que impacta na quantidade de bibliotecas externas que é necessária para fazer uma API RESt funcionar. Com a refatoração em Python a API reduziu para um tamanho de 200KB em arquivos, a figura \ref{tree-view-project} mostra como a arvore da aplicação ficou estruturada.
+Essa parece ser uma característica do NodeJS, que tem como lema "Baterias não inclusas". Essa politica tem seus prós e contras, depois de muito pesquisar pareceu ser a melhor alternativa trocar a tecnologia de desenvolvimento da API. Python foi escolhido, justamente por fazer uma proposta do tipo "Baterias inclusas", o que impacta na quantidade de bibliotecas externas que é necessária para fazer uma API RESt funcionar. Com a refatoração em Python a API reduziu para um tamanho de 200KB em arquivos, a Figura \ref{tree-view-project} mostra como a arvore da aplicação ficou estruturada.
 
 \begin{figure}[H]
 \caption{\label{tree-view-project} Estrutura do projeto}
@@ -200,7 +196,7 @@ Diversas tentativas foram feitas para fazer com que a API se tornasse disponíve
 
 O fato é que nada disso funcionou, a opção final foi mesclar os dois aplicativos, desta forma a API e a UI agora são um projeto único e está disponível na porta 3001 da central de controle. A UI está na raiz do domínio <IP>/ e a API recebeu o seguinte endereço <IP>/api.
 
-\paragraph{Sprint 7} A figura \ref{sprint-7} mostra o planejamento da sprint 7.
+\paragraph{Sprint 7} A Figura \ref{sprint-7} mostra o planejamento da sprint 7.
 
 \begin{figure}[H]
 \caption{\label{sprint-7} Detalhamento sprint 7}
@@ -211,7 +207,7 @@ O fato é que nada disso funcionou, a opção final foi mesclar os dois aplicati
 \paragraph{Retrospectiva da Sprint 7}
 Implementação realizada sem problemas, utilizado o template Skeleton \cite{SKELETON} para a criação da UI.
 
-\paragraph{Sprint 8} A figura \ref{sprint-8} mostra o planejamento da sprint 8.
+\paragraph{Sprint 8} A Figura \ref{sprint-8} mostra o planejamento da sprint 8.
 
 \begin{figure}[H]
 \caption{\label{sprint-8} Detalhamento sprint 8}
@@ -220,13 +216,13 @@ Implementação realizada sem problemas, utilizado o template Skeleton \cite{SKE
 \end{figure}
 
 \paragraph{Retrospectiva da Sprint 8}
-TODO: Na data da impressão do relatório não havia executado esta sprint ainda.
+Controle de eventos implementado, conforme o planejado.
 
 \section{Modelagem do processo de negócio}
 Diagramas de fluxo de dados, BPM, e Diagramas de sequência que descrevem o funcionamento do projeto.
 
 \subsection{Firmware do módulo auxiliar}
-O módulo auxiliar é o responsável pela interação do sistema com o mundo físico, cabe a ele fazer a leitura de input e o acionamento do output. O firmware responsável por fazer estas leituras e escritas está dividido em duas partes, a figura \ref{fw-acionamento} mostra como é feito o acionamento de uma carga.
+O módulo auxiliar é o responsável pela interação do sistema com o mundo físico, cabe a ele fazer a leitura de input e o acionamento do output. O firmware responsável por fazer estas leituras e escritas está dividido em duas partes, a Figura \ref{fw-acionamento} mostra como é feito o acionamento de uma carga.
 
 \begin{figure}[H]
 \caption{\label{fw-acionamento} Acionamento de carga}
@@ -234,7 +230,7 @@ O módulo auxiliar é o responsável pela interação do sistema com o mundo fí
 \legend{Fonte: Autor do projeto}
 \end{figure}
 
-Já a figura \ref{fw-leitura} mostra o que ocorre quando o módulo faz uma leitura.
+Já a Figura \ref{fw-leitura} mostra o que ocorre quando o módulo faz uma leitura.
 
 \begin{figure}[H]
 \caption{\label{fw-leitura} Leitura de dados}
@@ -245,7 +241,7 @@ Já a figura \ref{fw-leitura} mostra o que ocorre quando o módulo faz uma leitu
 Para o desenvolvimento deste firmware foi definido que o pino 2 do ESP-01 será o responsável por acionar cargas e o pino 3 será o responsável pela leitura de dados.
 
 \subsection{Controle de dispositivos através da API}
-O controle dos dispositivos é feito através da API de controle, a figura \ref{api-acionamento} mostra uma sequência de acionamento de dispositivo.
+O controle dos dispositivos é feito através da API de controle, a Figura \ref{api-acionamento} mostra uma sequência de acionamento de dispositivo.
 
 \begin{figure}[H]
 \caption{\label{api-acionamento} Acionamento através da API}
@@ -274,7 +270,7 @@ O desenvolvimento desta API permite um maior desacoplamento de funções do sist
 \end{citacao}
 
 \subsection{Definição de recursos}
-Recursos são o ponto central de qualquer API REST, eles "são o conjunto de dados que trafegam pelo protocolo" (Saudate, 2016, p.5). Os chamados "verbos" do HTTP são utilizados como um padronizador de ações, sendo este procedimento uma excelente simplificação para ações repetitivas dentro de um sistema. As figuras que seguem, fazem justamente a ligação entre estes "verbos", POST, GET, PUT e DELETE com as ações que eles representam. A figura \ref{recurso-users} mostra como o recurso users é tratados dentro da API.
+Recursos são o ponto central de qualquer API REST, eles "são o conjunto de dados que trafegam pelo protocolo" (Saudate, 2016, p.5). Os chamados "verbos" do HTTP são utilizados como um padronizador de ações, sendo este procedimento uma excelente simplificação para ações repetitivas dentro de um sistema. As Figuras que seguem, fazem justamente a ligação entre estes "verbos", POST, GET, PUT e DELETE com as ações que eles representam. A Figura \ref{recurso-users} mostra como o recurso users é tratados dentro da API.
 
 \begin{figure}[H]
 \caption{\label{recurso-users} Recurso users na API}
@@ -282,7 +278,7 @@ Recursos são o ponto central de qualquer API REST, eles "são o conjunto de dad
 \legend{Fonte: Autor do projeto}
 \end{figure}
 
-A figura \ref{recurso-devices} mostra como o recurso devices é tratado dentro da API.
+A Figura \ref{recurso-devices} mostra como o recurso devices é tratado dentro da API.
 
 \begin{figure}[H]
 \caption{\label{recurso-devices} Recurso devices na API}
@@ -291,7 +287,7 @@ A figura \ref{recurso-devices} mostra como o recurso devices é tratado dentro d
 \end{figure}
 
 \subsection{Controle de acesso}
-Todas as ações e recursos da API estão protegidas, o sistema de proteção para o uso deste sistema foi da adoção de tokens de segurança. Neste modelo de segurança, apenas mensagens devidamente assinadas chegam ao destino correto, executando a ação desejada. A figura \ref{controle-acesso} mostra como essa autenticação ocorre e como o usuário chega ao recurso desejado.
+Todas as ações e recursos da API estão protegidas, o sistema de proteção para o uso deste sistema foi da adoção de tokens de segurança. Neste modelo de segurança, apenas mensagens devidamente assinadas chegam ao destino correto, executando a ação desejada. A Figura \ref{controle-acesso} mostra como essa autenticação ocorre e como o usuário chega ao recurso desejado.
 
 \begin{figure}[H]
 \caption{\label{controle-acesso} Controle de acesso da API}
@@ -300,7 +296,7 @@ Todas as ações e recursos da API estão protegidas, o sistema de proteção pa
 \end{figure}
 
 \subsection{Estrutura de mensagens}
-No momento da solicitação de um recurso ou ação, temos um HTPP, a figura \ref{request} mostra a estrutura desta mensagem.
+No momento da solicitação de um recurso ou ação, temos um HTPP, a Figura \ref{request} mostra a estrutura desta mensagem.
 
 \begin{figure}[H]
 \caption{\label{request} Solicitação ou request}
@@ -318,7 +314,7 @@ Onde, cada campo poderia ser exemplificado da seguinte forma:
     \item [e)] Corpo quando necessário, em formato JSON JavaScript Object Notation.
 \end{itemize}
 
-A resposta a uma solicitação, obedece o padrão mostrado na figura \ref{response}.
+A resposta a uma solicitação, obedece o padrão mostrado na Figura \ref{response}.
 
 \begin{figure}[H]
 \caption{\label{response} Resposta ou response}
@@ -348,7 +344,7 @@ Dentro deste padrão esta API adota os seguintes valores de status para as requi
 \end{itemize}
 
 \section{Modelagem do banco de dados}
-Para a interação com o banco de dados foi utilizado o ORM Sequelize e sendo que a atualização deste modelo se dá sempre que uma alteração nos modelos da aplicação ocorrem. A figura \ref{doc-devices} mostra como fica a estrutura do modelo que representa os devices.
+Para a interação com o banco de dados foi utilizado o ORM Sequelize e sendo que a atualização deste modelo se dá sempre que uma alteração nos modelos da aplicação ocorrem. A Figura \ref{doc-devices} mostra como fica a estrutura do modelo que representa os devices.
 
 \begin{figure}[H]
 \caption{\label{doc-devices} Representção de devices}
@@ -356,7 +352,7 @@ Para a interação com o banco de dados foi utilizado o ORM Sequelize e sendo qu
 \legend{Fonte: Autor do projeto}
 \end{figure}
 
-Na figura \ref{doc-users} é exibido a estrutura que representa os Users.
+Na Figura \ref{doc-users} é exibido a estrutura que representa os Users.
 
 \begin{figure}[H]
 \caption{\label{doc-users} Representção de users}
@@ -364,7 +360,7 @@ Na figura \ref{doc-users} é exibido a estrutura que representa os Users.
 \legend{Fonte: Autor do projeto}
 \end{figure}
 
-A modelagem ER (Entidade Relacionamento) do banco de dados é apresentada na figura \ref{er-db}.
+A modelagem ER (Entidade Relacionamento) do banco de dados é apresentada na Figura \ref{er-db}.
 
 \begin{figure}[H]
 \caption{\label{er-db} ER do banco de dados}

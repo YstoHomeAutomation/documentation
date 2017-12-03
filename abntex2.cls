@@ -865,10 +865,13 @@
      {{\imprimirinstituicao\vspace*{\fill}}}
     
     \vspace*{1cm}
-    {\ABNTEXchapterfont\large\imprimirautor}
-
+    \textbf{\MakeUppercase \imprimirautor}
     \vspace*{\fill}
-    {\ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo}
+
+    \textbf{\MakeTextUppercase \imprimirtipotrabalho} 
+    \vspace*{\fill}
+    
+    \textbf{\imprimirtitulo}
     \vspace*{\fill}
     
     {\large\imprimirlocal}
@@ -896,11 +899,17 @@
 \newcommand{\folhaderostocontent}{
   \begin{center}
 
-    %\vspace*{1cm}
-    {\ABNTEXchapterfont\large\imprimirautor}
+    
+    \textbf{\MakeTextUppercase \imprimirautor}
+    \vspace*{3cm}
+    \vspace*{\fill}
+    
+    \textbf{\MakeTextUppercase \imprimirtipotrabalho} 
+    \vspace*{\fill}
 
     \vspace*{\fill}\vspace*{\fill}
-    {\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}
+    \vspace*{\fill}
+    \textbf{\imprimirtitulo}
     \vspace*{\fill}
     
     % {\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}
